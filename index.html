@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LISOMARKET PLACE</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#0066cc;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.slider{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+    position:relative;
+}
+
+.slides{
+    display:flex;
+    width:500%;
+    animation:slide 20s infinite;
+}
+
+.slides img{
+    width:20%;
+    height:400px;
+    object-fit:cover;
+}
+
+@keyframes slide{
+    0%{transform:translateX(0);}
+    20%{transform:translateX(0);}
+    25%{transform:translateX(-20%);}
+    45%{transform:translateX(-20%);}
+    50%{transform:translateX(-40%);}
+    70%{transform:translateX(-40%);}
+    75%{transform:translateX(-60%);}
+    95%{transform:translateX(-60%);}
+    100%{transform:translateX(-80%);}
+}
+
+.section-title{
+    text-align:center;
+    margin:30px 0;
+    color:#0066cc;
+    font-size:30px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+    text-align:center;
+}
+
+.price{
+    color:#28a745;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.buy-btn{
+    display:inline-block;
+    background:#28a745;
+    color:white;
+    padding:10px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+.buy-btn:hover{
+    background:#1f7a35;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.service-card{
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.service-card h3{
+    color:#0066cc;
+    margin-bottom:10px;
+}
+
+footer{
+    background:#0066cc;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+LISOMARKET PLACE
+</header>
+
+<!-- SLIDER -->
+<div class="slider">
+    <div class="slides">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1200" alt="">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200" alt="">
+        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=1200" alt="">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1200" alt="">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200" alt="">
+    </div>
+</div>
+
+<h2 class="section-title">Featured Products</h2>
+
+<div class="products">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800">
+        <div class="card-content">
+            <h3>Smartphone</h3>
+            <p>Latest Android Smartphone</p>
+            <div class="price">K4,500</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800">
+        <div class="card-content">
+            <h3>Headphones</h3>
+            <p>Wireless Bluetooth Headphones</p>
+            <div class="price">K850</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800">
+        <div class="card-content">
+            <h3>Smart Watch</h3>
+            <p>Fitness Tracking Watch</p>
+            <div class="price">K1,200</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800">
+        <div class="card-content">
+            <h3>Sports Shoes</h3>
+            <p>Comfortable Running Shoes</p>
+            <div class="price">K950</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+
+</div>
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="services">
+
+    <div class="service-card">
+        <h3>Website Development</h3>
+        <p>Professional websites for businesses and organizations.</p>
+        <div class="price">K3,500</div>
+        <a href="#" class="buy-btn">Order Service</a>
+    </div>
+
+    <div class="service-card">
+        <h3>Facebook Page Management</h3>
+        <p>Daily posting, customer engagement and growth.</p>
+        <div class="price">K2500/Month</div>
+        <a href="#" class="buy-btn">Order Service</a>
+    </div>
+
+    <div class="service-card">
+        <h3>Graphic Design</h3>
+        <p>Posters, logos, flyers and social media graphics.</p>
+        <div class="price">K500</div>
+        <a href="#" class="buy-btn">Order Service</a>
+    </div>
+
+    <div class="service-card">
+        <h3>PACRA Registration</h3>
+        <p>Business registration and compliance support.</p>
+        <div class="price">K3500</div>
+        <a href="#" class="buy-btn">Order Service</a>
+    </div>
+
+</div>
+
+<footer>
+© 2026 LISOMARKET PLACE | All Rights Reserved
+</footer>
+
+</body>
+</html>
